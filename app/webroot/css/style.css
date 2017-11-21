@@ -1,0 +1,553 @@
+
+
+/*
+*
+*	Generales
+*
+*
+*/
+
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/montserrat/Montserrat-Light.otf");
+}
+
+html {
+	font-family: Montserrat;
+}
+
+.login_layout{
+	margin-top: 7% !important;
+	margin-bottom: 5% !important;
+	padding: 0 15% 0 15%;
+}
+
+.border_top {
+	border-top: 2px solid grey;
+	width: 95%;
+}
+
+.decimal {
+	float: right;
+	padding-right: 5%;
+}
+
+.btn_peque {
+	width: 30px !important;
+	height: 30px !important;
+}
+
+.btn_peque i {
+    line-height: 30px !important;
+}
+
+a > .material-icons {
+	color: black;
+}
+
+a.hasta_arriba {
+	display: none;
+	width: 60px;
+	height: 60px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	right: 20px;
+	bottom: 20px;
+	background: black url("../img/up-arrow.png") no-repeat center 43%;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+.margin_nada {
+	margin: 0px;
+}
+
+.padding_nada {
+	padding: 0px;
+}
+
+.margin_bottom {
+	margin-bottom: 10px;
+}
+
+.bold_grande {
+	font-weight: bold;
+	font-size: 20px;
+	color: black;
+	text-decoration: underline;
+}
+
+.side-nav li {
+    float: none;
+    line-height: 64px;
+}
+
+.spinner-layer {
+    border-color: black;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.clase_toast {
+	background-color: #5746FF !important;
+}
+
+
+
+/*
+*
+*	Placeholders
+*
+*
+*/
+
+input::-webkit-input-placeholder {
+	color: #4F4F4F !important;
+}
+input:-moz-placeholder {
+	color: #4F4F4F !important;
+}
+input::-moz-placeholder {
+	color: #4F4F4F !important;
+}
+input:-ms-input-placeholder {  
+	color: #4F4F4F !important;
+}
+input,textarea::-webkit-input-placeholder {
+	color: #4F4F4F !important;
+}
+input,textarea:-moz-placeholder {
+	color: #4F4F4F !important;
+}
+input,textarea::-moz-placeholder {
+	color: #4F4F4F !important;
+}
+input,textarea:-ms-input-placeholder {  
+	color: #4F4F4F !important;
+}
+
+
+
+/*
+*
+*	Clases y ids usados para modificar el datepicker
+*
+*/
+
+.picker__weekday-display {
+    background-color: black;
+}
+
+.picker__date-display {
+    background-color: #494949;
+}
+
+.picker__day--selected, .picker__day--selected:hover, .picker--focused .picker__day--selected {
+    background-color: black;
+}
+
+.picker__day.picker__day--today {
+    color: black;
+    font-weight: bold;
+}
+
+.picker__close, .picker__today {
+	color: black;
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+.picker__close:hover, .picker__today:hover, .picker__close:active, .picker__today:active {
+    color: white;
+    background-color: black;
+}
+
+button.picker__today:focus, button.picker__clear:focus, button.picker__close:focus {
+    color: white;
+    background-color: black;
+}
+
+.picker__nav--prev:hover, .picker__nav--next:hover {
+    background-color: #999999;
+}
+
+
+
+/*
+*
+*	Inputs
+*
+*
+*/
+
+input[type]:focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label, textarea.materialize-textarea:disabled {
+    color: black;
+}
+
+input:not(.en_modal), textarea.materialize-textarea {
+    border-top: 2px solid grey !important;
+    border-bottom: none;
+    box-shadow: none !important;
+    position: relative;
+    top: -6px;
+    transition: border-color .2s ease-in-out;
+    -webkit-transition: border-color .2s ease-in-out;
+    -moz-transition: border-color .2s ease-in-out;
+}
+
+input[type]:focus:not([readonly, .en_modal]), textarea.materialize-textarea:focus:not([readonly, .en_modal]) {
+    border-top: 2px solid black !important;
+    box-shadow: none !important;
+}
+
+.input-field label.active {
+    font-size: 16px !important;
+}
+
+.input-field label {
+    font-size: 16px !important;
+    color: grey;
+    position: relative;
+    top: -100px;
+    left: 0px !important;
+}
+
+.input-field label.textarea_label {
+    position: absolute;
+    top: 0px;
+}
+
+#buscador .input-field {
+	margin-top: 0px;
+	top: 50px;
+}
+
+#buscador.dropdown-content li:hover, #buscador.dropdown-content li.active {
+    background-color: transparent;
+    cursor: auto;
+}
+
+#buscador.dropdown-content {
+    overflow-y: hidden;
+}
+
+.validation_label{
+	color: red !important;
+	display: none;
+	position: initial !important;
+	font-size: 13px !important;
+}
+
+.dropdown-content li {
+    min-height: 0px !important;
+}
+
+.dropdown-content li>a, .dropdown-content li>span {
+    color: grey;
+}
+
+.switch label input[type=checkbox]:checked+.lever {
+    background-color: grey;
+}
+
+.switch label input[type=checkbox]:checked+.lever:after {
+    background-color: #3F3F3F;
+}
+
+.switch label .lever {
+    background-color: #BCBCBC;
+}
+
+input[type]:disabled+label, textarea.materialize-textarea:disabled+label {
+	color: grey;
+}
+
+textarea.para_escribir {
+	margin-bottom: 0px;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2) !important;
+	width: 95%;
+	padding: 10px 0 10px 0;
+	position: relative;
+}
+
+
+
+/*
+*
+*	Botones
+*
+*
+*/
+
+.btn, .btn-large {
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+.btn-large {
+	line-height: 40px;
+}
+
+.btn:disabled {
+    border: none;
+}
+
+.btn:hover, .btn-large:hover, button:focus, .btn:focus, #btn_modal_apu {
+    color: white;
+    background-color: black;
+}
+
+.btn-large i:hover {
+	color: white;
+}
+
+#opciones_usuario {
+	border: none;
+	border-bottom: 1px solid black;
+	box-shadow: none;
+}
+
+#opciones_usuario:hover {
+    color: black;
+    background-color: transparent;
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+}
+
+#btn_buscador {
+	border: none;
+	border: 1px solid black;
+	width: 100%;
+}
+
+#btn_buscador:hover {
+    color: black;
+    background-color: transparent;
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+}
+
+.parpadea {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+
+
+
+/*
+*
+*	Tablas
+*
+*
+*/
+
+thead {
+    border-bottom: none;
+}
+
+th {
+	font-size: 16px;
+	padding-bottom: 0px;
+}
+
+td {
+	color: grey;
+	padding: 10px 5px 20px 5px;
+}
+
+td > .decimal {
+	color: #4F4F4F;
+}
+
+.como_th {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.collapsible-header {
+	padding: 0px;
+	height: 77px;
+}
+
+
+
+/*
+*
+*	Menus
+*
+*
+*/
+
+nav {
+	background-color: black;
+}
+
+nav ul a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.opcion_seleccionada > a {
+    background-color: #5746FF;
+}
+
+.nav-wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#menu_hamburguesa {
+	background-color: black;
+}
+
+#menu_hamburguesa .material-icons {
+	color: white;
+	margin-right: 1rem;
+}
+
+#menu_hamburguesa a {
+	color: white;
+}
+
+
+
+/*
+*
+*	Grid
+*
+*
+*/
+
+.contenedor{
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+#padding_right {
+    padding-right: 4rem;
+}
+
+#padding_left {
+    padding-left: 4rem;
+}
+
+/* Cuando se hace tableta */
+@media only screen and (max-width: 992px) {
+	#padding_right { padding-right: 0.75rem; }
+	#padding_left { padding-left: 0.75rem; }
+}
+
+#collapsible_conceptos {
+	height: auto;
+	border: none;
+}
+
+.collapsible-body {
+	border-bottom: none;
+}
+
+.collapsible {
+	border: none;
+	box-shadow: none;
+}
+
+
+
+/*
+*
+*	Modal
+*
+*
+*/
+
+.modal {
+	max-height: 90%;
+	width: 90%;
+}
+
+.tabla_modal .input-field {
+	margin-top: 0px !important;
+}
+
+.tabla_modal input {
+	margin: 0px !important;
+	width: 95% !important;
+	border-bottom: none;
+}
+
+.tabla_modal input:not([type]):disabled {
+	border-bottom: none;
+}
+
+.tabla_modal input.para_escribir {
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2) !important;
+}
+
+.tabla_modal input[type].valid:not(.border_rojo), textarea.materialize-textarea.valid:not(.border_rojo) {
+	border-bottom: none !important;
+}
+
+.padding_top {
+	padding-top: 23px;
+}
+
+.border_rojo {
+	border-bottom: 2px solid red !important;
+}
+
+.btn_border {
+	border: 1px solid black;
+}
+
+.btn_border > i {
+	margin-left: -1px;
+	margin-top: -1px;
+}
+
+input[type]:focus {
+
+}
+
+#indirecto_p, #financiero_p, #utilidad_p {
+	width: 90% !important;
+}
+
+.waves-effect.waves-black .waves-ripple {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#modal_agregar_partida {
+	width: 75%;
+}
+
+#PartidaAgregarForm .modal-content {
+	padding-bottom: none;
+}
+
+#pu_modal {
+	width: 55%;
+	left: 2%;
+	right: 100%;
+}
+
+#insumos_modal {
+	width: 40%;
+	left: 57%;
+	right: 0%;
+	z-index: 1000000;
+}
+
+.drop_brilla {
+	background-color: yellow;
+}
+
+.ui-widget-content {
+	max-width: 40%;
+	cursor: move;
+}
