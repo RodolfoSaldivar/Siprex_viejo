@@ -53,6 +53,8 @@ class UsersController extends AppController {
 	{
 		$this->layout ="login";
 
+		if ($this->Session->check('Auth')) $this->redirect('/users/logout');
+
 	    if ($this->request->is('post'))
 	    {
 	    	$valido = $this->User->validarInputs($this->request->data['User']);
